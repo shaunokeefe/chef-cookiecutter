@@ -1,0 +1,25 @@
+# chef wants old ruby hash syntax for now
+HashSyntax:
+  EnforcedStyle: hash_rockets
+  Exclude:
+    - 'Berksfile'
+
+# some regexes are really long
+LineLength:
+  Max: 1000
+
+# no, underscores in literals look terrible
+Style/NumericLiterals:
+  MinDigits: 20
+
+# no spaces inside hash literals
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Style/AlignParameters:
+  Exclude:
+    - 'Berksfile'
+
+Style/SingleSpaceBeforeFirstArg:
+  Exclude:
+    - 'metadata.rb'
